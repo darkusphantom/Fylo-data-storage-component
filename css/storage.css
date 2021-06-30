@@ -2,13 +2,13 @@
   background: var(--darkBlue);
   width: 90%;
   margin: 0 auto 20px auto;
-  border-radius: 5px;
+  border-radius: 10px;
   text-align: center;
 }
 
 .storage__upFiles {
   display: grid;
-  grid-template: 10px 1fr 1fr auto / repeat(7, 1fr);
+  grid-template: 10px 1fr 50px auto / repeat(7, 1fr);
   grid-template-areas:
     ". .            .          ."
     ". logo         logo       logo       "
@@ -16,7 +16,6 @@
   gap: 30px 10px;
   align-items: center;
   justify-content: center;
-  height: 200px;
 }
 
 .storage__description {
@@ -26,7 +25,7 @@
 }
 
 .storage-border {
-  border-radius: 5px 100px 5px 5px;
+  border-radius: 10px 100px 10px 10px;
 }
 
 .storage__upFiles .logo {
@@ -44,4 +43,24 @@
 
 .storage__upFiles .btn__upload {
   grid-area: iconUpload;
+}
+
+
+@media screen and (min-width: 1440px) {
+  .storage {
+    margin: 0 15px;
+  }
+  .storage__upFiles {
+    width: 30%;
+  }
+
+  .storage__description {
+    width: 50%;
+  }
+
+  .storage__description .text {
+    width: 85%;
+    margin: 1em auto;
+    text-align: left;
+  }
 }
