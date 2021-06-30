@@ -1,0 +1,91 @@
+:root {
+  --gradient: blue/*hsl(6, 100%, 80%) to hsl(335, 100%, 65%)*/;
+
+  --paleBlue: hsl(243, 100%, 93%);
+  --grayishBlue: hsl(229, 7%, 55%);
+  --darkBlue: hsl(228, 56%, 26%);
+  --veryDarkBlue: hsl(229, 57%, 11%);
+
+  --FontSizeBody: 14px;
+  --fontBig: 2rem;
+  --fontFamily-RaleWay: "Raleway", sans-serif;
+  --fontBody: normal 14px/18px var(--fontFamily-RaleWay);
+
+  --backgroundImg-mobile: url("../images/bg-mobile.png");
+  --backgroundImg-desktop: url("../images/bg-desktop.png");
+
+  --background-mobile: var(--backgroundImg-mobile) no-repeat;
+  --background-desktop: var(--backgroundImg-desktop) no-repeat;
+
+  --iconDocument: url("../images/icon-document.svg") no-repeat center;
+  --iconFolder: url("../images/icon-folder.svg") no-repeat center;
+  --iconUpload: url("../images/icon-upload.svg") no-repeat center;
+
+  --translated-center: translate(-50%, -50%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font: var(--fontBody);
+  background: var(--background-mobile);
+  color: var(--paleBlue);
+}
+
+button {
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: var(--translated-center);
+}
+
+.container__img {
+  width: 60%;
+  max-width: 100%;
+}
+
+.container__img img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-veryDarkBlue {
+  color: var(--veryDarkBlue);
+}
+
+.text-big {
+  font-size: var(--fontBig);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

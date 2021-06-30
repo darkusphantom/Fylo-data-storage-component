@@ -1,0 +1,47 @@
+.storage {
+  background: var(--darkBlue);
+  width: 90%;
+  margin: 0 auto 20px auto;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.storage__upFiles {
+  display: grid;
+  grid-template: 10px 1fr 1fr auto / repeat(7, 1fr);
+  grid-template-areas:
+    ". .            .          ."
+    ". logo         logo       logo       "
+    ". iconDocument iconFolder iconUpload";
+  gap: 30px 10px;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+.storage__description {
+  height: 120px;
+  padding: 20px 0;
+  position: relative;
+}
+
+.storage-border {
+  border-radius: 5px 100px 5px 5px;
+}
+
+.storage__upFiles .logo {
+  grid-area: logo;
+  width: 80%;
+}
+
+.storage__upFiles .btn__document {
+  grid-area: iconDocument;
+}
+
+.storage__upFiles .btn__folder {
+  grid-area: iconFolder;
+}
+
+.storage__upFiles .btn__upload {
+  grid-area: iconUpload;
+}

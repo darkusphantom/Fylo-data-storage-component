@@ -1,0 +1,51 @@
+.bar {
+	width: 85%;
+	margin: auto;
+	height: 20px;
+	background: var(--veryDarkBlue);
+	border-radius: 50px;
+	position: relative;
+}
+
+.bar__progress {
+	width: 70%;
+	height: 14.2px;
+	background: var(--gradient);
+	border-radius: 50px;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+}
+
+.bar__text {
+	position: absolute;
+	top: 20px;
+	font-weight: bold;
+}
+
+.bar__text__initial {
+	left: 0;
+}
+
+.bar__text__max {
+	right: 0;
+}
+
+.bar__text__spaceDisk {
+	width: 150px;
+	padding: 20px 0;
+	margin: 0;
+	border-radius: 10px;
+	background: var(--paleBlue);
+	font-size: .8rem;
+	font-weight: normal;
+	color: var(--grayishBlue);
+	top: 130%;
+	left: 50%;
+	transform: translate(-50%, -130%);
+}
+
+.bar__text__spaceDisk span {
+	vertical-align: text-bottom;
+	margin-right: 5px;
+}

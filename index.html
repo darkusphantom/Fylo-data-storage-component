@@ -8,24 +8,53 @@
   
   <title>Frontend Mentor | Fylo data storage component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="css/main.css" media="all">
+  <link rel="stylesheet" href="css/storage.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/btn.css">
+  <link rel="stylesheet" href="css/bar.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="container container-flex container-center">
+    <section class="storage storage__upFiles storage-border">
+      <div class="logo container__img">
+        <img src="images/logo.svg" alt="Logo" widht="375" height="667">  
+      </div>
+      <div class="btn btn__document">
+        <button class="icon icon__document"></button>
+      </div>
+      <div class="btn btn__folder">
+        <button class="icon icon__folder"></button>
+      </div>
+      <div class="btn btn__upload">
+        <button class="icon icon__upload"></button>
+      </div>
+    </section>
+    <section class="storage storage__description">
+      <p>
+        You’ve used <span class="text-bold">815 GB</span> of your storage
+      </p>
+      <div class="bar">
+        <div class="bar__progress">
+           <span class="icon__progress"></span>
+        </div>
+        <p class="bar__text bar__text__initial">0 GB</p>
+        <p class="bar__text bar__text__max">1000 GB</p>
+      </div>
+      <p class="bar__text bar__text__spaceDisk">
+        <span class="text-bold text-veryDarkBlue text-big">185</span> GB Left
+      </p>
+    </section>
+  </div>
 
-  You’ve used 815 GB of your storage
-
-  185 GB Left
   
-  0 GB
-  1000 GB
-  
-  <div class="attribution">
+  <!--  <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div>-->
 </body>
 </html>
