@@ -17,9 +17,9 @@
   --background-mobile: var(--backgroundImg-mobile) no-repeat;
   --background-desktop: var(--backgroundImg-desktop) var(--veryDarkBlue) no-repeat  0 50vh;
 
-  --iconDocument: url("../images/icon-document.svg") no-repeat center;
-  --iconFolder: url("../images/icon-folder.svg") no-repeat center;
-  --iconUpload: url("../images/icon-upload.svg") no-repeat center;
+  --iconDocument: url("../images/icon-document.svg") var(--veryDarkBlue) no-repeat center;
+  --iconFolder: url("../images/icon-folder.svg") var(--veryDarkBlue) no-repeat center;
+  --iconUpload: url("../images/icon-upload.svg") var(--veryDarkBlue) no-repeat center;
 
   --translated-center: translate(-50%, -50%);
 }
@@ -40,6 +40,10 @@ button {
 
 button:hover {
   cursor: pointer;
+}
+
+input[type="file"] {
+  opacity: 0;
 }
 
 .container {

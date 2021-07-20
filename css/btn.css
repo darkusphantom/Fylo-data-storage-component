@@ -4,3 +4,20 @@
 	background: var(--veryDarkBlue);
 	border-radius: 10px;
 }
+
+.btn > input {
+	width: 100%;
+	height: 100%;
+}
+
+.btn__document {
+	background: var(--iconDocument);
+}
+
+.btn__folder {
+	background: var(--iconFolder);
+}
+
+.btn__upload {
+	background: var(--iconUpload);
+}
